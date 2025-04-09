@@ -17,12 +17,11 @@ func (o *OllamaLLM) GenerateFromSinglePrompt(ctx context.Context, promopt string
 }
 
 func (o *OllamaLLM) ShowModelList(ctx context.Context) []string {
-	o.llm.
-		panic("implement me")
+	panic("implement me")
 }
 
 func InitOllama() *OllamaLLM {
-	llm, err := ollama.New(ollama.WithModel("llama3"))
+	llm, err := ollama.New(ollama.WithModel("deepseek-r1:8b"))
 	if err != nil {
 		panic(err)
 	}
